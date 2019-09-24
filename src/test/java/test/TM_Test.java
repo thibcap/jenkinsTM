@@ -33,13 +33,13 @@ public class TM_Test {
 			driver.manage().window().maximize();
 			driver.get("http://192.168.102.149:10005/squash/login");
 			driver.findElement(By.xpath("//input[@id='username']")).clear();
-			Thread.sleep(200);
+			Thread.sleep(500);
 			driver.findElement(By.xpath("//input[@id='username']")).sendKeys("admin");
-			Thread.sleep(200);
+			Thread.sleep(500);
 			driver.findElement(By.xpath("//input[@id='password']")).clear();
-			Thread.sleep(200);
+			Thread.sleep(500);
 			driver.findElement(By.xpath("//input[@id='password']")).sendKeys("admin");
-			Thread.sleep(200);
+			Thread.sleep(500);
 			driver.findElement(By.xpath("//input[@type='submit']")).click();
 			Thread.sleep(500);
 			driver.findElement(By.xpath("//a[@id='test-case-link']")).click();
@@ -57,15 +57,15 @@ public class TM_Test {
 			driver.findElement(By.xpath("//input[@id='add-test-case-reference']")).clear();
 			Thread.sleep(200);
 			driver.findElement(By.xpath("//input[@id='add-test-case-reference']")).sendKeys("REF1");
-			Thread.sleep(500);
+			Thread.sleep(1000);
 			driver.findElement(By.xpath("(//input[@type='button' and @value='Ajouter'])[2]")).click();
 			Thread.sleep(500);
 			assertTrue(driver.findElement(By.xpath("//a[text()='REF1 - CDT1']")).isDisplayed());
-			Thread.sleep(200);
+			Thread.sleep(500);
 			driver.findElement(By.xpath("//a[@class='jstree-clicked ui-state-default']")).click();
-			Thread.sleep(200);
+			Thread.sleep(500);
 			driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-trash']")).click();
-			Thread.sleep(200);
+			Thread.sleep(500);
 			driver.findElement(By.xpath("//input[@id='del-node-confirm-btn']")).click();
 			
 			
