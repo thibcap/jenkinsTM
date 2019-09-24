@@ -1,4 +1,4 @@
-package org.autom3.miniprojet.jenkins;
+package test;
 
 import static org.junit.Assert.assertTrue;
 
@@ -10,7 +10,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class testTM {
+public class TM_Test {
 
 	WebDriver driver;
 	String b = "firefox";
@@ -27,7 +27,7 @@ public class testTM {
 		
 		@Test
 		
-		public void test() throws InterruptedException, FileNotFoundException{
+		public void run() throws InterruptedException, FileNotFoundException{
 			
 			driver= Outils.choisirNavigateur(BROWSER);
 			driver.manage().window().maximize();
