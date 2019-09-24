@@ -49,23 +49,23 @@ public class TM_Test {
 			driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-plusthick']")).click();
 			Thread.sleep(500);
 			driver.findElement(By.xpath("//a[text()='Nouveau cas de test...']")).click();
-			Thread.sleep(200);
+			Thread.sleep(500);
 			driver.findElement(By.xpath("//input[@id='add-test-case-name']")).clear();
-			Thread.sleep(200);
+			Thread.sleep(500);
 			driver.findElement(By.xpath("//input[@id='add-test-case-name']")).sendKeys("CDT1");
-			Thread.sleep(200);
+			Thread.sleep(500);
 			driver.findElement(By.xpath("//input[@id='add-test-case-reference']")).clear();
-			Thread.sleep(200);
+			Thread.sleep(500);
 			driver.findElement(By.xpath("//input[@id='add-test-case-reference']")).sendKeys("REF1");
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 			driver.findElement(By.xpath("(//input[@type='button' and @value='Ajouter'])[2]")).click();
-			Thread.sleep(500);
+			Thread.sleep(2000);
 			assertTrue(driver.findElement(By.xpath("//a[text()='REF1 - CDT1']")).isDisplayed());
-			Thread.sleep(500);
+			Thread.sleep(1000);
 			driver.findElement(By.xpath("//a[@class='jstree-clicked ui-state-default']")).click();
-			Thread.sleep(500);
+			Thread.sleep(1000);
 			driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-trash']")).click();
-			Thread.sleep(500);
+			Thread.sleep(1000);
 			driver.findElement(By.xpath("//input[@id='del-node-confirm-btn']")).click();
 			
 			
